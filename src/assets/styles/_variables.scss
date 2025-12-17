@@ -1,0 +1,23 @@
+@use 'helpers/index' as *;
+
+:root {
+  --just-white: #fff;
+  --dark-blue: #053868;
+  --gray: #6d727a;
+  --gray-50: rgba(109, 114, 122, 0.5);
+  --blue: #00b0f0;
+  --blue-50: rgba(0, 176, 240, 0.5);
+  --green: #95c11f;
+  --green-50: rgba(149, 193, 31, 0.5);
+  --yellow: #ffc211;
+  --yellow-50: rgba(255, 194, 17, 0.5);
+  --orange: #ff7900;
+
+  --font-family-base: 'ProximaNova', sans-serif;
+
+  --container-width: #{rem(1856)};
+  --container-padding-x: #{rem(32)};
+  --container-padding-y: #{rem(32)};
+
+  --transition-duration: 0.2s;
+}
