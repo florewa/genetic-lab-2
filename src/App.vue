@@ -1,13 +1,7 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
-import { useInactivity } from "@/utils/useInactivity/useInactivity.ts";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-
-onMounted(() => {
-  useInactivity();
-});
 </script>
 
 <template>
