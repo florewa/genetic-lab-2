@@ -26,7 +26,7 @@ onMounted(() => {
       </header>
 
       <div class="controls">
-        <div class="control-group">
+        <div class="control-group left">
           <label>Цель:</label>
           <div class="toggle">
             <button
@@ -156,11 +156,20 @@ onMounted(() => {
   border-radius: 12px;
 }
 
+.control-group {
+  &.left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 .toggle {
   display: flex;
   background: #e0e0e0;
   border-radius: 8px;
   padding: 2px;
+
   button {
     border: none;
     padding: 5px 15px;
@@ -171,7 +180,7 @@ onMounted(() => {
     &.active {
       background: white;
       color: #6c63ff;
-      shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
   }
 }
